@@ -1,13 +1,17 @@
 import React from "react";
+
 import { View, Text } from "react-native";
 
 import { styles } from "./styles";
-import { Header } from "../../components/Header";
 
-export function Home() {
+import LogoSvg from "../../assets/logo.svg";
+
+export function Header() {
   return (
     <View style={styles.container}>
-      <Header />
+      <LogoSvg />
+
+      <Text style={styles.logoutText}>Sair</Text>
     </View>
   );
 }
