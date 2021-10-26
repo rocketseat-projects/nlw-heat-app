@@ -1,17 +1,21 @@
 import React from "react";
-
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 
 import { styles } from "./styles";
-
 import LogoSvg from "../../assets/logo.svg";
+import { UserPhoto } from "../UserPhoto/index";
 
 export function Header() {
   return (
     <View style={styles.container}>
       <LogoSvg />
 
-      <Text style={styles.logoutText}>Sair</Text>
+      <View style={styles.logoutButton}>
+        <TouchableOpacity>
+          <Text style={styles.logoutText}>Sair</Text>
+        </TouchableOpacity>
+        <UserPhoto imageUri="https://github.com/ElieneMontenegro.png" />
+      </View>
     </View>
   );
 }
