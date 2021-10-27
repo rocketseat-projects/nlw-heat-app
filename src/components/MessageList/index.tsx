@@ -8,9 +8,9 @@ import { styles } from "./styles";
 export function MessageList() {
   const message = {
     id: "1",
-    text: "Uma mensagem linda demais",
+    text: "Uma mensagem linda e perfeita, pois finalmente consegui rodar esta bosta",
     user: {
-      name: "Luluzinha",
+      name: "Lila",
       avatar_url: "https://github.com/ElieneMontenegro.png",
     },
   };
